@@ -17,9 +17,13 @@ for number in range(qnt):
                 d[i] = 1
             n = n / i
         else:
-            i+=1
+            if(i>=3):
+                i+=2
+            else:
+                i+=1
     k = d.keys()
     k.sort()
     for e in k:
         print "{} {}".format(e, d[e])
     print "---"
+
