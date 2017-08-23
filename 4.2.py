@@ -4,14 +4,16 @@ n = input()
 L = [3]
 L2 = [3]
 m = int(sqrt(n))
-print m
-'''Preencher a lista'''
+
 a = 3 + 2
 while a < n:
     L.append(a)
     L2.append(a)
     a += 2
-'''Fim do preenchimento'''
+
+print L
+print m
+
 
 p = 3
 j = 0
