@@ -11,14 +11,15 @@ while i < j:
         break
     else:
         print("{} {} {}".format(x, y, 'N'))
-        while x <= (n+1)/2:
-            x += 1
+        x += 1
+        while x < (n+1)/2:
             y = sqrt(x*x - n)
             if (y - int(y) == 0.0) :
                 print("{} {} {}".format(x, int(y), 'S'))
                 break
             else:
                 print("{} {} {}".format(x, int(y), 'N'))
+                x += 1
                 
     a = int(x + y)
     b = int(x - y)
